@@ -60,7 +60,18 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
+	var _exportTest = __webpack_require__(237);
+
+	var ALLTHINGS = _interopRequireWildcard(_exportTest);
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	console.log('I AM THE DEFAULT IMPORT', ALLTHINGS.default);
+	console.log(_exportTest.someString);
+	console.log(_exportTest.someObj);
+	console.log('ALL THINGS', ALLTHINGS);
 
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
@@ -27143,6 +27154,24 @@
 	});
 
 	exports.default = Main;
+
+/***/ },
+/* 237 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var someString = 'Hi everyone';
+	var someObj = { first: 'Della', last: 'Ella' };
+
+	var defaultThing = 'I AM DEFAAAAAAULT';
+
+	exports.default = defaultThing;
+	exports.someString = someString;
+	exports.someObj = someObj;
 
 /***/ }
 /******/ ]);
