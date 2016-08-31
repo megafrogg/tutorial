@@ -1,5 +1,5 @@
-var React = require('react');
-var ReactDom = require('react-dom');
+import React from 'react';
+
 
 var Main = React.createClass({
   render: function(){
@@ -11,4 +11,4 @@ var Main = React.createClass({
   }
 });
 
-ReactDOM.render(<Main />, document.getElemementById('app'));
+module.exports = Main;
