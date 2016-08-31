@@ -56,14 +56,16 @@
 
 	var _reactRouter = __webpack_require__(172);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	var _routes = __webpack_require__(235);
 
-	var routes = __webpack_require__(235);
+	var _routes2 = _interopRequireDefault(_routes);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
 	  null,
-	  routes
+	  _routes2.default
 	), document.getElementById('app'));
 
 /***/ },
@@ -27094,25 +27096,33 @@
 
 	'use strict';
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
 	var _reactRouter = __webpack_require__(172);
 
+	var _Main = __webpack_require__(236);
+
+	var _Main2 = _interopRequireDefault(_Main);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var Main = __webpack_require__(236);
-	var Home = __webpack_require__(237);
-	var route = _reactRouter.Router.Route;
-
-	module.exports = _react2.default.createElement(_reactRouter.Route, { path: '/', component: Main });
+	exports.default = _react2.default.createElement(_reactRouter.Route, { path: '/', component: _Main2.default });
 
 /***/ },
 /* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _react = __webpack_require__(1);
 
@@ -27132,33 +27142,7 @@
 	  }
 	});
 
-	module.exports = Main;
-
-/***/ },
-/* 237 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Home = _react2.default.createClass({
-	  displayName: "Home",
-
-	  render: function render() {
-	    return _react2.default.createElement(
-	      "h2",
-	      { className: "text-center" },
-	      "Search by Github Username Above"
-	    );
-	  }
-	});
-
-	module.exports = Home;
+	exports.default = Main;
 
 /***/ }
 /******/ ]);

@@ -11,4 +11,4 @@ var Main = React.createClass({
   }
 });
 
-module.exports = Main;
+export default Main;
