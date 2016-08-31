@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import * from ALLROUTERS from 'react-router';
+import {Router} from 'react-router';
 var routes = require('./config/routes');
 
 ReactDOM.render(

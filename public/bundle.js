@@ -27104,9 +27104,9 @@
 
 	var Main = __webpack_require__(236);
 	var Home = __webpack_require__(237);
-	var Route = _reactRouter.Router.Route;
+	var route = _reactRouter.Router.Route;
 
-	module.exports = _react2.default.createElement(Route, { path: '/', component: Main });
+	module.exports = _react2.default.createElement(_reactRouter.Route, { path: '/', component: Main });
 
 /***/ },
 /* 236 */
